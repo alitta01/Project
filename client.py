@@ -14,4 +14,8 @@ while True:
     print("\n")
     
    if ch=='2':
+    c.send(bytes("2","utf-8"))
+    f=input("Enter name of file:")
+    c.send(bytes(f,"utf-8"))
+    text=input("Enter the text to be added:")
     
